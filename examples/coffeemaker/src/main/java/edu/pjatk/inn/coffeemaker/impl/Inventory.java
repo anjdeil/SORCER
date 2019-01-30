@@ -2,7 +2,7 @@ package edu.pjatk.inn.coffeemaker.impl;
 
 /**
  * 
- * @author Sarah E. Smith & Mike Sobolewski
+ * @author 
  *
  * Inventory for the coffee maker
  */

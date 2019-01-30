@@ -7,7 +7,7 @@ import sorcer.service.ContextException;
 import java.rmi.RemoteException;
 
 /**
- * Created by Mike Sobolewski on 8/29/15.
+ * 
  */
 public class DeliveryImpl implements Delivery {
 

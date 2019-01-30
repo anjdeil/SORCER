@@ -1,0 +1,33 @@
+1. 
+ CoffeeMaker.java, addInventory(int amtCoffee, int amtMilk, int amtSugar, int amtChocolate), linia 148
+ - BUG DESCRIPTION: We can't add sugar as positive variable
+ - TEST REQUEST: 
+	edu.pjatk.inn.coffeemaker.InventoryTest > testAddInventoryWithPositiveSugar FAILED
+      	java.lang.AssertionError at InventoryTest.java:39
+
+2. 
+ CoffeeMaker.java, deleteRecipe(Recipe r), linia 87
+ - BUG DESCRIPTION: Deleting RANDOM recipes, not removing recipes correctly
+ - TEST REQUEST:
+	edu.pjatk.inn.coffeemaker.RecipeTest > testDeleteRecipe FAILED
+      	java.lang.AssertionError at RecipeTest.java:55
+
+3.
+ CoffeeMaker.java, makeCoffee(Recipe r, int amtPaid), linia 177
+ - BUG DESCRIPTION: Amount of coffee can not be decreased. Removing amount of coffee not working properly.
+ - TEST REQUEST:
+	edu.pjatk.inn.coffeemaker.InventoryTest > testMakeCoffeeCorrectIngredientsAfterwards FAILED
+      	java.lang.AssertionError at InventoryTest.java:57
+
+4.
+ CoffeeMaker.java, getRecipeForName(String name), linia 210
+ - BUG DESCRIPTION: If i leave empty recipe, the program is not moving forward, not serving "null" recipes.
+ - TEST REQUEST:
+	edu.pjatk.inn.coffeemaker.RecipeTest > testHandleNullRecipeName FAILED
+      	java.lang.AssertionError at RecipeTest.java:61
+
+5. CoffeeMaker.java, final int NUM_RECIPES, linia 25
+ - BUG DESCRIPTION: 0nly 3 recipes available, 4 was set as default
+ - TEST REQUEST:
+	edu.pjatk.inn.coffeemaker.RecipeTest > testOnlyThreeRecipes FAILED
+      	java.lang.AssertionError at RecipeTest.java:40
